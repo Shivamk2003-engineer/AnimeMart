@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Anime Mart</title>
+  <style media="screen">
+    .footer{
+      position: fixed;
+    }
+  </style>
+</head>
+
+<body style="background-color:#f7f7f7;">
+  {%if request.user.is_authenticated%}
+    {% include "ecom/customer_navbar.html" %}
+  {%else%}
+    {% include "ecom/navbar.html" %}
+  {%endif%}
+  <br><br><br>
+<h4 style="text-align:center;">"Welcome to Anime Mart, your ultimate online shopping destination! We're not just another e-commerce store – we’re a passionate team dedicated to providing you with the best products, unbeatable prices, and exceptional customer service. Whether you’re searching for the latest fashion trends, innovative gadgets, or everyday essentials, we’ve got you covered.
+
+  Our mission is simple: To bring you quality and convenience at your fingertips. We understand that shopping online can be overwhelming, so we’ve curated a seamless experience where you can browse, shop, and get your hands on the items you love – all from the comfort of your home.
+  
+  We pride ourselves on offering a diverse range of products, sourced from top brands and trusted suppliers. Our team works tirelessly to ensure every item is crafted with care and precision, so you can shop with confidence.
+  
+  <h3> Shop With Us?</h3><br>
+  
+  <h4>* Quality Assurance:</h4> We handpick products that meet high standards of quality and durability.<br>
+  <h4>* Fast & Reliable Shipping:</h4> Get your orders delivered quickly and securely, wherever you are.<br>
+  <h4>* Customer-Centric Support:</h4> Have a question or need help? Our friendly support team is here to assist you at every step.<br>
+  <h4>*Safe & Secure:</h4> Your privacy is our priority. We use the latest technology to ensure a secure shopping experience.<br>
+  At Anime Mart, we are committed to not only providing you with the best products but also creating a shopping experience that is hassle-free and enjoyable. Join the Anime Mart family today, and start discovering all the amazing things we have in store for you!
+  
+  " </h4>
+  <div>
+    <h2>Gallery</h2>
+    <img src="{% static 'images/1744614065635.jpg' %}" alt="Anime Mart" style="width: 300px; height: auto;">
+  </div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  {% include "ecom/footer.html" %}
+</body>
+<!--
+developed By : shivam kumbhar & Om Ghanwat
+-->
+
+</html>

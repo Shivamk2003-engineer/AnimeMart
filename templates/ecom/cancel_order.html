@@ -1,0 +1,15 @@
+{% extends 'customer_base.html' %}
+{% block content %}
+<div class="container">
+    <h2>Cancel Order</h2>
+    <p>Are You Sure You Want To Cancel The Order <strong>{{ product.product.name }}</strong>?</p>
+    <p>Order Id:{{ order.id }}</p>
+    <p>Product Id:{{ product.id }}</p>
+
+    <form method="POST">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-danger">Confirm Cancel</button>
+        <a href="{% url 'my-orders' %}" class="btn btn-secondary">Back</a>
+    </form>
+</div>
+{% endblock %}

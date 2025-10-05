@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <h2>Products in {{ category.name }}</h2>
+    <div>
+        {% for product in products %}
+        <div>
+            <img src="{{ product.image.url }}" width="100">
+            <h3>{{ product.name }}</h3>
+            <p>Price: $ {{ product.price }}</p>
+        </div>
+        {% empty %}
+        <p>No Products Available In This Category.</p>
+        {% endfor %}
+    </div>
+</html>
