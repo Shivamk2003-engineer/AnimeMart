@@ -18,6 +18,13 @@ Allow smooth product browsing, cart, and order features.
 Provide admin control for product and order management. 
 Ensure a responsive and attractive UI.
 
+#Technology Used
+-Python
+-Django
+-HTML, CSS, JavaScript
+-Bootstrap
+-SQLite(Database)
+
 Anime Mart is an e-commerce website specifically 
 designed for anime lovers. The platform provides a 
 wide range of anime-related products such as action 
